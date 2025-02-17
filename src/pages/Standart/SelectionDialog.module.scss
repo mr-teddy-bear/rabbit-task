@@ -1,0 +1,123 @@
+.wrapper {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .popup {
+    background: linear-gradient(
+      146deg,
+      rgba(33, 37, 43, 0.34) 20.33%,
+      rgba(16, 17, 14, 0.38) 96.38%
+    );
+    backdrop-filter: blur(2.5px);
+    border: 2px solid #006369;
+    padding: 16px;
+    min-width: 700px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .popupTitle {
+      color: #fff;
+      font-size: 32px;
+      font-weight: 500;
+    }
+
+    .itemsContainer {
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #006369;
+      padding: 8px;
+      border-radius: 8px;
+      color: #fff;
+    }
+  }
+
+  .selectedItemsContainer {
+    border-radius: 12px;
+    border: 1px solid #006369;
+
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    .title {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 400;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .noItemsText {
+        color: #999a99;
+        font-size: 16px;
+        height: 43px;
+      }
+
+      .selectedItem {
+        border: 1px solid #006369;
+        padding: 12px 18px;
+        border-radius: 8px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+
+  .btnWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+
+    button {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 12px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      transition: all 0.3s ease 0s;
+      color: #fff;
+      min-width: 148px;
+
+      &:hover {
+        transition: all 0.3s ease 0s;
+      }
+    }
+
+    .cancelBtn {
+      background-color: #db4343;
+
+      &:hover {
+        background-color: #8d2a2a;
+      }
+    }
+    .saveBtn {
+      background-color: #0d923a;
+
+      &:hover {
+        background-color: #004718;
+      }
+    }
+  }
+}

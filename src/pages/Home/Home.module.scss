@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: auto 0;
+
+  & .link {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 12px;
+    background-color: #0d923a;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    color: #fff;
+    min-width: 148px;
+
+    &:hover {
+      background-color: #004718;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
