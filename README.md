@@ -34,5 +34,5 @@ For the widget with standard filtering – /standart
 
 ## Contacts
 If you have any questions or need assistance, please contact the developer:
-Telegram - `https://t.me/mrTeddyIT`
-LinkedIn - `https://www.linkedin.com/in/maksim-s-ba1b5519b/`
+- Telegram - `https://t.me/mrTeddyIT`
+- LinkedIn - `https://www.linkedin.com/in/maksim-s-ba1b5519b/`
